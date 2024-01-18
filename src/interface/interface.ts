@@ -1,5 +1,5 @@
 interface iNav{
     icon?: React.ReactNode,
-    name: string
+    name?: string
     icon2?: React.ReactNode,
 }

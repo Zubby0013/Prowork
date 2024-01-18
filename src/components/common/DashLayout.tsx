@@ -13,7 +13,7 @@ const DashLayout = () => {
             <div >
             <SiderBar/>
             </div>
-            <div className=' w-full lg:w-[calc(100%-250px)] self-end z-10 ml-0 lg:ml-[250px]'>
+            <div className=' w-full lg:w-[calc(100%-250px)] ml-0 lg:ml-[250px] h-[calc(100%-70px)] mt-[70px] flex-1'>
             <Outlet/>
             </div>
         </div>

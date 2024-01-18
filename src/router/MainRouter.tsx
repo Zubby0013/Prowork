@@ -12,11 +12,16 @@ import Project from "../Dashboard/Project";
 import Document from "../Dashboard/Document";
 import AddTask from "../Dashboard/AddTask";
 import AddProject from "../Dashboard/AddProject";
+import PrivateRouter from "./Private";
 
 export const MainRouter = createBrowserRouter([
     {
         path: "/",
-        element: <Layout/>,
+        element: (
+            <PrivateRouter>
+                <Layout/>,
+            </PrivateRouter>
+        ),
         children: [
             {
                 index: true,
@@ -46,7 +51,7 @@ export const MainRouter = createBrowserRouter([
             },
             {
                 index: true,
-                path: '/dash',
+                path: 'viewdash',
                 element: <DashBoard/>
             },
             {

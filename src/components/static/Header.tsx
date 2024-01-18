@@ -30,7 +30,7 @@ const Header = () => {
               <div className=' w-[2px] h-[30px] bg-gray-700'/>
               <div>Log in</div>
               <Link to='/register'>
-              <button className=' bg-[#bb66d2] h-[40px] px-3 rounded-xl'>Start for free</button>
+              <button className=' bg-[#bb66d2] h-[40px] px-3 rounded-xl text-white'>Start for free</button>
               </Link>
               </div>
               <div className=' sm:block  lg:hidden cursor-pointer transition-all duration-300'
